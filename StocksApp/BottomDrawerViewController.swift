@@ -12,7 +12,7 @@ class BottomDrawerViewController: UIViewController, UITableViewDelegate {
     
     var tableView = UITableView()
     let fullView: CGFloat = 100
-    var stocks = ["Dow Jones", "S$P 500", "AAPL", "BA"]
+    var stocks = ["Dow Jones", "S&P 500", "AAPL", "BA"]
     var partialView: CGFloat {
         return UIScreen.main.bounds.height - 150
     }

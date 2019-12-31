@@ -13,6 +13,8 @@
 		0EF357B723BAE2C200A441C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF357B623BAE2C200A441C7 /* Assets.xcassets */; };
 		0EF357BA23BAE2C200A441C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF357B823BAE2C200A441C7 /* LaunchScreen.storyboard */; };
 		0EF357C223BAE32800A441C7 /* BottomDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF357C123BAE32800A441C7 /* BottomDrawerViewController.swift */; };
+		0EF357E823BBB6CC00A441C7 /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF357E723BBB6CC00A441C7 /* StockListCell.swift */; };
+		0EF357EA23BBB8E000A441C7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF357E923BBB8E000A441C7 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0EF357B923BAE2C200A441C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EF357BB23BAE2C200A441C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF357C123BAE32800A441C7 /* BottomDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomDrawerViewController.swift; sourceTree = "<group>"; };
+		0EF357E723BBB6CC00A441C7 /* StockListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListCell.swift; sourceTree = "<group>"; };
+		0EF357E923BBB8E000A441C7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				0EF357B823BAE2C200A441C7 /* LaunchScreen.storyboard */,
 				0EF357BB23BAE2C200A441C7 /* Info.plist */,
 				0EF357C123BAE32800A441C7 /* BottomDrawerViewController.swift */,
+				0EF357E723BBB6CC00A441C7 /* StockListCell.swift */,
+				0EF357E923BBB8E000A441C7 /* UIViewExtension.swift */,
 			);
 			path = StocksApp;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF357EA23BBB8E000A441C7 /* UIViewExtension.swift in Sources */,
 				0EF357C223BAE32800A441C7 /* BottomDrawerViewController.swift in Sources */,
 				0EF357B223BAE2C000A441C7 /* ViewController.swift in Sources */,
+				0EF357E823BBB6CC00A441C7 /* StockListCell.swift in Sources */,
 				0EF357AE23BAE2C000A441C7 /* AppDelegate.swift in Sources */,
 				0EF357B023BAE2C000A441C7 /* SceneDelegate.swift in Sources */,
 			);

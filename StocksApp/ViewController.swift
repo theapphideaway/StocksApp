@@ -8,17 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate{
+class ViewController: UIViewController{
 
     var tableView = UITableView()
    
+    lazy var searchBar:UISearchBar = UISearchBar()
     
-    var stocks = ["Dow Jones", "S$P 500", "AAPL", "BA"]
+    var stocks = ["Dow Jones", "S&P 500", "AAPL", "BA"]
+    var names = ["Dow Jones", "S&P 500", "AAPL", "BA"]
+    
+    let cellName = "StockCell"
     
     override func viewDidLoad() {
     super.viewDidLoad()
       setupTableView()
       view.backgroundColor =  .darkGray
+        navigationItem.searchController = UISearchController()
+        navigationItem.title = "Stocks"
+        
     }
 
     
@@ -40,23 +47,20 @@ class ViewController: UIViewController, UITableViewDelegate{
       view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-      tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-      tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-      tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-      tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-      tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.pin(to: view)
+        tableView.rowHeight = 80
+      tableView.register(StockListCell.self, forCellReuseIdentifier: cellName)
     }
 
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return stocks.count
   }
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    cell.textLabel?.text = stocks[indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: cellName) as! StockListCell
+    cell.set(symbol: stocks[indexPath.row], name: names[indexPath.row])
     return cell
   }
 }

@@ -19,8 +19,6 @@ class BottomDrawerViewController: UIViewController, UITableViewDelegate {
     
     var isScrollEnabled: Bool = false
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -52,7 +50,6 @@ class BottomDrawerViewController: UIViewController, UITableViewDelegate {
             print(view.frame.height)
             if(recognizer.direction == Direction.Down){
                 
-                                
                 UIView.animate(withDuration: 0.1){[weak self ] in
                     self!.view.frame = CGRect(x: 0, y: self!.view.frame.height * 0.80, width: self!.view.frame.width, height: self!.view.frame.height)
                 }

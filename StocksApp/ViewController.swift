@@ -14,6 +14,7 @@ class ViewController: UIViewController{
     var tableView = UITableView()
     var titleLabel = UILabel()
     var subtitleLabel = UILabel()
+    var editButton = UIButton()
     lazy var searchBar:UISearchBar = UISearchBar()
     
     var stocks = ["Dow Jones", "S&P 500", "AAPL", "BA"]
@@ -45,7 +46,7 @@ class ViewController: UIViewController{
         navBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive           = true
         navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive   = true
         navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        navBar.heightAnchor.constraint(equalToConstant: 55).isActive = true
+        navBar.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         navBar.addSubview(titleLabel)
         navBar.addSubview(subtitleLabel)
@@ -59,6 +60,16 @@ class ViewController: UIViewController{
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
         subtitleLabel.leadingAnchor.constraint(equalTo: navBar.leadingAnchor, constant: 20).isActive = true
+        
+        
+        navBar.addSubview(editButton)
+        editButton.setTitle("Edit", for: .normal)
+        editButton.setTitleColor(.systemBlue, for: .normal)
+        editButton.translatesAutoresizingMaskIntoConstraints = false
+        editButton.topAnchor.constraint(equalTo: navBar.topAnchor).isActive = true
+        editButton.trailingAnchor.constraint(equalTo: navBar.trailingAnchor, constant: -20).isActive = true
+        
+        editButton.bottomAnchor.constraint(equalTo: navBar.bottomAnchor).isActive = true
     }
     
     func setupSearchBar(){

@@ -16,6 +16,7 @@
 		0EF357E823BBB6CC00A441C7 /* StockListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF357E723BBB6CC00A441C7 /* StockListCell.swift */; };
 		0EF357EA23BBB8E000A441C7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF357E923BBB8E000A441C7 /* UIViewExtension.swift */; };
 		0EF357ED23BBF71D00A441C7 /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF357EC23BBF71D00A441C7 /* StockService.swift */; };
+		0EF3583423BD2F1E00A441C7 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3583323BD2F1E00A441C7 /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0EF357E723BBB6CC00A441C7 /* StockListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListCell.swift; sourceTree = "<group>"; };
 		0EF357E923BBB8E000A441C7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0EF357EC23BBF71D00A441C7 /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
+		0EF3583323BD2F1E00A441C7 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		0EF357AC23BAE2C000A441C7 /* StocksApp */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3583223BD2F0000A441C7 /* Models */,
 				0EF357EB23BBF6EC00A441C7 /* Services */,
 				0EF357AD23BAE2C000A441C7 /* AppDelegate.swift */,
 				0EF357AF23BAE2C000A441C7 /* SceneDelegate.swift */,
@@ -82,6 +85,14 @@
 				0EF357EC23BBF71D00A441C7 /* StockService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0EF3583223BD2F0000A441C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3583323BD2F1E00A441C7 /* Stock.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			files = (
 				0EF357EA23BBB8E000A441C7 /* UIViewExtension.swift in Sources */,
 				0EF357C223BAE32800A441C7 /* BottomDrawerViewController.swift in Sources */,
+				0EF3583423BD2F1E00A441C7 /* Stock.swift in Sources */,
 				0EF357B223BAE2C000A441C7 /* ViewController.swift in Sources */,
 				0EF357ED23BBF71D00A441C7 /* StockService.swift in Sources */,
 				0EF357E823BBB6CC00A441C7 /* StockListCell.swift in Sources */,

@@ -64,17 +64,12 @@
 		0EF357AC23BAE2C000A441C7 /* StocksApp */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3584F23BE3F0400A441C7 /* Extensions */,
+				0EF3584E23BE3EEF00A441C7 /* Support */,
+				0EF3584D23BE3ED800A441C7 /* Custom Views */,
+				0EF3584C23BE3EBB00A441C7 /* Screens */,
 				0EF3583223BD2F0000A441C7 /* Models */,
 				0EF357EB23BBF6EC00A441C7 /* Services */,
-				0EF357AD23BAE2C000A441C7 /* AppDelegate.swift */,
-				0EF357AF23BAE2C000A441C7 /* SceneDelegate.swift */,
-				0EF357B123BAE2C000A441C7 /* ViewController.swift */,
-				0EF357B623BAE2C200A441C7 /* Assets.xcassets */,
-				0EF357B823BAE2C200A441C7 /* LaunchScreen.storyboard */,
-				0EF357BB23BAE2C200A441C7 /* Info.plist */,
-				0EF357C123BAE32800A441C7 /* BottomDrawerViewController.swift */,
-				0EF357E723BBB6CC00A441C7 /* StockListCell.swift */,
-				0EF357E923BBB8E000A441C7 /* UIViewExtension.swift */,
 			);
 			path = StocksApp;
 			sourceTree = "<group>";
@@ -93,6 +88,43 @@
 				0EF3583323BD2F1E00A441C7 /* Stock.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0EF3584C23BE3EBB00A441C7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0EF357B123BAE2C000A441C7 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0EF3584D23BE3ED800A441C7 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				0EF357C123BAE32800A441C7 /* BottomDrawerViewController.swift */,
+				0EF357E723BBB6CC00A441C7 /* StockListCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		0EF3584E23BE3EEF00A441C7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0EF357AD23BAE2C000A441C7 /* AppDelegate.swift */,
+				0EF357AF23BAE2C000A441C7 /* SceneDelegate.swift */,
+				0EF357B623BAE2C200A441C7 /* Assets.xcassets */,
+				0EF357B823BAE2C200A441C7 /* LaunchScreen.storyboard */,
+				0EF357BB23BAE2C200A441C7 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0EF3584F23BE3F0400A441C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0EF357E923BBB8E000A441C7 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
